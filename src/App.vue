@@ -1,46 +1,42 @@
 <template>
-<div>
-  <div class="flex justify-between w-10/12 h-16 mx-auto my-10 border border-black">
-    <nav class="self-center w-5/12">
-      <ul class="flex">
-        <li class="mr-8 text-white cursor-pointer">Portfolio</li>
-        <li class="mr-8 text-white cursor-pointer">About Me</li>
-        <li class="mr-8 text-white cursor-pointer">Get In Touch</li>
-      </ul>
-    </nav>
-    <img src="./assets/hello-logo.png" class="self-center mx-auto w-14 h-14" />
-    <div class="flex justify-end w-5/12 h-16">
-      <div class="my-auto cursor-pointer ml-7">
-        <img src="./assets/github.png" />
-      </div>
-      <div class="my-auto cursor-pointer ml-7">
-        <img src="./assets/insta.png" />
-      </div>
-      <div class="my-auto cursor-pointer ml-7">
-        <img src="./assets/twitter.png" />
-      </div>
-      <div class="my-auto cursor-pointer ml-7">
-        <img src="./assets/linkedin.png" />
+  <div>
+    <MobileNav />
+    <div class="justify-between hidden w-10/12 h-16 mx-auto my-10 border border-black lg:flex">
+      <nav class="self-center w-5/12">
+        <ul class="flex">
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/">Portfolio</router-link></li>
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/about">About Me</router-link></li>
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/contact">Get In Touch</router-link></li>
+        </ul>
+      </nav>
+      <router-link to="/">
+        <img src="@/assets/Hi-di Ho.png" class="self-center w-24 h-24" />
+      </router-link>
+      <div class="flex justify-end w-5/12 h-16">
+        <a href="https://www.instagram.com/the_shred_flanders/" class="my-auto cursor-pointer ml-7">
+          <i class="text-2xl text-white fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100083959629324" class="my-auto cursor-pointer ml-7">
+          <i class="text-2xl text-white fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shred-flanders-356896246/" class="my-auto cursor-pointer ml-7">
+          <i class="text-2xl text-white fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/ShredFlanders4" class="my-auto cursor-pointer ml-7">
+          <i class="text-2xl text-white fa-brands fa-twitter"></i>
+        </a>
       </div>
     </div>
+    <router-view></router-view>
   </div>
-  <header>
-    <div class="w-10/12 mx-auto my-24 text-center">
-      <h1 class="text-[3rem] font-medium text-white">Shred Flanders</h1>
-      <h2 class="text-[3rem] text-green-400">Guitar Shredder</h2>
-      <h3 class="text-[3rem] text-white">Web Developer</h3>
-      <div class="mx-auto my-12">
-        <img src="./assets/Shred Flanders.png" class="mx-auto border-4 border-green-400 w-6/6 h-96" />
-      </div>
-    </div>
-  </header>
-</div>
 </template>
 
 <script>
+import MobileNav from './components/MobileNav.vue'
 
 export default {
-  name: 'App',
+    name: "App",
+    components: { MobileNav }
 }
 
 </script>
