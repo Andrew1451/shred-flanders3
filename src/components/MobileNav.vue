@@ -15,20 +15,20 @@
           <ul class="flex flex-col pt-5">
             <li class="my-2 mr-8 text-white cursor-pointer"><router-link to="/">Portfolio</router-link></li>
             <li class="my-2 mr-8 text-white cursor-pointer"><router-link to="/about">About Me</router-link></li>
-            <li class="my-2 mr-8 text-white cursor-pointer">Get In Touch</li>
+            <li class="my-2 mr-8 text-white cursor-pointer"><router-link to="/contact">Get In Touch</router-link></li>
           </ul>
         </nav>
         <div class="flex flex-col mb-5">
-          <a href="https://www.instagram.com/the_shred_flanders/" class="my-2 cursor-pointer ml-7">
+          <a href="https://www.instagram.com/the_shred_flanders/" target="_blank" class="my-2 cursor-pointer ml-7">
             <i class="text-xl text-white fa-brands fa-instagram"></i>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100083959629324" class="my-2 cursor-pointer ml-7">
+          <a href="https://www.facebook.com/profile.php?id=100083959629324" target="_blank" class="my-2 cursor-pointer ml-7">
             <i class="text-xl text-white fa-brands fa-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/shred-flanders-356896246/" class="my-2 cursor-pointer ml-7">
+          <a href="https://www.linkedin.com/in/shred-flanders-356896246/" target="_blank" class="my-2 cursor-pointer ml-7">
             <i class="text-xl text-white fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://twitter.com/ShredFlanders4" class="my-2 cursor-pointer ml-7">
+          <a href="https://twitter.com/ShredFlanders4" target="_blank" class="my-2 cursor-pointer ml-7">
             <i class="text-xl text-white fa-brands fa-twitter"></i>
           </a>
         </div>
